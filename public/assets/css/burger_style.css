@@ -1,0 +1,76 @@
+li {
+  padding: 5px;
+  margin: 5px;
+  background: #faebd7;
+  width: 350px;
+}
+
+.label {
+  font-weight: bold;
+}
+
+.create-update-form {
+  padding: 5px;
+  margin: 5px;
+  width:150px;
+  background: #E8B92D;
+  text-align: center;
+  position: absolute;
+  left: 40%;
+  top: 75%;
+}
+
+.form-group {
+  margin-bottom: 5px;
+  padding-left: 35%;
+  padding-right:35%;
+  background-color: #E8B92D;
+}
+
+* {
+	text-align: center;
+}
+
+
+body{
+	background-color: #E8B92D;
+	font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+	font-size: 14px;
+	line-height: 1.42857143;
+	color: #333;
+}
+
+.jumbotron {
+	background-color: yellow;
+  border:solid;
+  border-width: 10px;
+  border-color: red;
+}
+
+#burgerButton{
+  text-align: center;
+  position: absolute;
+  left: 46.5%;
+  top: 75%;
+  width: 100px;
+  margin:10px;
+  border:10px;
+
+}
+
+img{
+  height:25%;
+  width:25%;
+}
+
+.list-toEat{
+  float:left;
+  width:35%;
+}
+
+.list-eaten{
+  float:right;
+  width:35%;
+}
+
+

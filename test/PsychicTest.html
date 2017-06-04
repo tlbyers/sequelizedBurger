@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="UTF-8">
+
+	<h2>The Psychic  Game</h2>
+
+	</head>
+
+<body>
+	<div id="game">
+	   <p>Guess what letter I am thinking of</p>
+	 </div>
+
+<script type="text/javascript">
+
+    //Computer is going to randomly choose a letter, user is going to get 10 guesses to try to guess the letter the computer chose. 
+   
+  //We will report out # of wins/losses and how many guesses remain available.
+
+
+    //random options for the computer include all letters of the alphabet
+
+   //Guesses begin with 10, count down to 0 - at zero, 1 loss is recorded - if guess correctly before zero, 1 win is recoreded
+
+  var options=["a","b","c","d","e","f","g","h","i","j","k","l","m","n","o","p","q","r","s","t","u","v","w","x","y","z"];
+  var wins = 0;
+  var losses=0;
+  var guessesLeft=10;  
+
+  //Capture user key click
+
+ 	document.onkeyup=function() {
+ 		var userGuess=String.fromCharCode(event.keyCode).toLowerCase();
+
+ 		console.log(userGuess);
+    
+    //random letter chosen from options array
+
+  		var computerGuess=options[Math.floor(Math.random()*options.length)];
+
+  		console.log(computerGuess); 
+
+      //compare users guess to computers guess
+
+      //If user guesses the computer guess, wins are increased by 1 and # of guesses is reset to 10 - if not,# of guesses left is decreased by 1 until reaching zero then losses increased by 1 and guesses reset to 10
+
+      
+	      }
+
+	  
+
+	     var html="<p>Guess what letter I am thinking of </p>"+"<p>Wins: " +"</p>"+"<p>Losses:"+losses +"</p>" + "<p> Guesses Left:"+guessesLeft+"</p>";
+
+	     document.querySelector('#game').innerHTML=html;
+
+    
+
+</script>
+</body>
+</html>
+
+
+  
